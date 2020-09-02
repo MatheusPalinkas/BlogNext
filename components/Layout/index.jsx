@@ -4,7 +4,7 @@ import Link from "next/link";
 import Head from "next/head";
 
 const name = "Matheus Palinkas";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "Blog Next.js";
 
 const Layout = ({ children, home }) => {
   return (
