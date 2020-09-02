@@ -25,6 +25,15 @@ const Layout = ({ children, home }) => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
+        <nav className={utilStyles.navMenu}>
+          <ul className={utilStyles.ulMenu}>
+            <li className={utilStyles.liMenu}>
+              <Link href="/Blog">
+                <a>Blog</a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
         {home ? (
           <>
             <img
@@ -39,17 +48,12 @@ const Layout = ({ children, home }) => {
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
+                  src="/images/profile.jpeg"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
           </>
         )}
       </header>

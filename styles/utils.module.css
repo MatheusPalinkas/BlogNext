@@ -50,3 +50,25 @@
 .lightText {
   color: #999;
 }
+
+.navMenu {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 5px 50px;
+}
+.ulMenu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.liMenu {
+  padding: 10px 20px;
+}
+.liMenu > a {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: black;
+}
