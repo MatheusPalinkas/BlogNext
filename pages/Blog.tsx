@@ -5,7 +5,15 @@ import Date from "../components/Date";
 import { getSortedPostsData } from "../lib/posts";
 import utilStyles from "../styles/utils.module.css";
 
-function Blog({ allPostsData }) {
+function Blog({
+  allPostsData,
+}: {
+  allPostsData: {
+    date: string;
+    title: string;
+    id: string;
+  }[];
+}) {
   return (
     <Layout>
       <Head>
