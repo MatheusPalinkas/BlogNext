@@ -33,6 +33,11 @@ const Layout = ({
       <nav className={utilStyles.navMenu}>
         <ul className={utilStyles.ulMenu}>
           <li className={utilStyles.liMenu}>
+            <Link href="/Repositorios">
+              <a>Repositórios</a>
+            </Link>
+          </li>
+          <li className={utilStyles.liMenu}>
             <Link href="/Blog">
               <a>Blog</a>
             </Link>
