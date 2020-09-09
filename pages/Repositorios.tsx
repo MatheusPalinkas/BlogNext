@@ -37,7 +37,7 @@ const Repositorios = ({
                     alignItems: "baseline",
                   }}
                 >
-                  <Link href="/repos/[id]" as={`/repos/${repo.node_id}`}>
+                  <Link href="/repos/[id]" as={`/repos/${repo.name}`}>
                     <a>{repo.name}</a>
                   </Link>
                   <small className={utilStyles.lightText}>
